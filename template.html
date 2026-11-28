@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>全球财经早报 · 글로벌 경제 브리핑</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f5f1;--card:#fff;--ink:#1d1d1b;--mute:#6b6a65;--line:#e2e0d8;--acc:#0b5cab;--kr:#c8102e;--chip:#eceae2;--hot:#d9480f;--accfg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#15161a;--card:#1f2127;--ink:#ecebe6;--mute:#9a9a94;--line:#2e3139;--acc:#6aa9ec;--kr:#ff6b7d;--chip:#2a2d35;--hot:#ff922b;--accfg:#0b1220}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 -apple-system,"Segoe UI","PingFang SC","Malgun Gothic","Noto Sans KR","Noto Sans SC",sans-serif}
+.wrap{max-width:800px;margin:0 auto;padding:20px 16px 96px}
+h1{font-size:22px;margin:0 0 2px}
+.sub{color:var(--mute);font-size:13px;margin-bottom:14px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+#tabs{flex-wrap:nowrap;overflow-x:auto;max-width:100%;white-space:nowrap;scrollbar-width:none}
+#tabs::-webkit-scrollbar{display:none}
+#tabs button{flex:none}
+.seg{display:inline-flex;background:var(--chip);border-radius:10px;padding:3px;flex-wrap:wrap}
+.seg button{border:0;background:none;color:var(--mute);padding:7px 12px;border-radius:8px;font:inherit;font-size:14px;cursor:pointer}
+.seg button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+input.q{width:100%;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:9px 12px;font:inherit;margin-bottom:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin-bottom:9px}
+.card.hot{border-left:4px solid var(--hot)}
+.card h3{margin:0 0 4px;font-size:16px;line-height:1.45}
+.card h3 a{color:inherit;text-decoration:none}
+.card p{margin:0;color:var(--ink)}
+.meta{display:flex;gap:6px;font-size:12px;color:var(--mute);margin-top:8px;flex-wrap:wrap}
+.tag{background:var(--chip);border-radius:6px;padding:1px 7px}
+.tag.kr{color:var(--kr)}.tag.hot{color:var(--hot);font-weight:600}.tag.imp{color:var(--acc)}
+h2{font-size:16px;margin:18px 0 8px}
+.note{font-size:12.5px;color:var(--mute);border-left:3px solid var(--line);padding-left:10px;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:6px}
+.q1{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+.q1 .n{font-size:12px;color:var(--mute)}.q1 .v{font-size:17px;font-weight:600}.q1 .c{font-size:13px}
+.up{color:#e03131}.dn{color:#1c7ed6}
+.ev{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
+.ev:last-child{border-bottom:0}.ev .dd{min-width:58px;font-weight:700;color:var(--hot)}
+.ev a{color:inherit;text-decoration:none}.ev .w{font-size:12px;color:var(--mute)}
+.sumline{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.status{font-size:13px;color:var(--mute);margin:-4px 0 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.status button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:3px 10px;font:inherit;font-size:13px;cursor:pointer}
+.tag.of{color:#2f9e44;font-weight:600}
+.tag.kl{color:var(--kr);font-weight:600}
+.alert2{background:rgba(224,49,49,.12);border:1px solid #e03131;border-radius:10px;padding:9px 12px;margin-bottom:10px;font-size:14px}
+.alert2 a{display:block;color:inherit;text-decoration:none;margin-top:4px}
+.tag.new{color:#2f9e44;font-weight:600}
+.empty{color:var(--mute);padding:24px 0}
+.status>span{flex:1 1 100%}
+.status button.rf{background:var(--acc);color:var(--accfg);border:0;padding:8px 16px;font-weight:700;font-size:14px;border-radius:10px}
+.status button.rf:disabled{opacity:.6;cursor:default}
+@keyframes sp{to{transform:rotate(360deg)}}
+.alert{background:rgba(217,72,15,.12);border:1px solid var(--hot);color:var(--hot);border-radius:10px;padding:9px 12px;margin-bottom:8px;font-weight:600}
+.chips{display:flex;gap:6px;overflow-x:auto;margin:-4px 0 12px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--mute);border-radius:999px;padding:4px 11px;font:inherit;font-size:13px;cursor:pointer}
+.chip.on{background:var(--acc);color:var(--accfg);border-color:var(--acc)}
+.tag.multi{color:var(--acc);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 id="title"></h1>
+  <div class="sub" id="sub"></div>
+  <div class="status" id="st"></div>
+  <div class="bar"><div class="seg" id="tabs"></div><div class="seg" id="langs"></div><div class="seg" id="sorts"></div></div>
+  <input class="q" id="q" type="search">
+  <div class="chips" id="chips"></div>
+  <div id="top"></div>
+  <div id="list"></div>
+  <div class="note" id="note"></div>
+</div>
+<script>
+var D=__DATA__;
+var IMP={us:["美股","미국증시"],earn:["财报","실적"],rate:["利率","금리"],fx:["汇率","환율"],semi:["半导体","반도체"],geo:["地缘","지정학"],trade:["关税贸易","관세·무역"],flow:["资金流","수급"],policy:["政策","정책"],energy:["能源","에너지"],crypto:["加密","가상자산"]};
+var UI={
+ zh:{title:"全球财经早报",sub:"韩股交易视角 · 云端每30分钟自动更新 · 打开页面即同步最新 · 数据时间 ",
+  tabs:{a:"全部",m:"📊 行情日程",c:"🪙 加密货币",us:"🇺🇸 美国市场",k:"🇰🇷 韩国",g:"🌐 全球宏观",geo:"🌍 地缘",v:"🧠 策略师观点"},cal:"📅 经济日程(韩国时间)",mkt:"📊 市场快照",sum:"盘面速览",alert:"⚠️ 异常波动提醒:",grp:{kr:"🇰🇷 韩国市场",kr2:"🇰🇷 重点个股",us2:"🇺🇸 美股重点(与韩股联动)",us:"🇺🇸 美股(隔夜)",mac:"🌐 利率·美元·商品",as:"🌏 亚洲",cr:"🪙 加密货币(24小时)"},dday:"D-",today:"今天",asof:"数据时间",calend:"日程已核实至 2027-04,到期后需更新。",
+  ph:"搜索关键词,例如:三星、关税、Fed、外资、코스피…",top:"⚡ 今日要点(按关键词权重 + 新鲜度自动排序)",
+  empty:"没有符合条件的新闻。",lv:{cloud:"☁️ 云端数据",go:"🔄 实时补充中",ok:"✅ 实时补充",add:"新增",fail:"ℹ️ 浏览器实时补充未获取到(免费中转被限流,可忽略,云端数据正常)",btn:"立即刷新",busy:"刷新中…",done:"已刷新",new:"🆕新"},
+  note:"云端程序每30分钟自动抓取并翻译,你打开页面时会立即同步最新一份;浏览器还会尝试用免费公共中转补充几个重点源,失败不影响使用。行情来自 Yahoo Finance 公开数据,可能有延迟,仅供参考;外资/机构/个人净买卖未包含,请看券商软件。新闻由程序从公开来源自动抓取;“要点”“影响”标签由关键词规则判断,不是投资建议或AI分析。翻译为机器翻译,可能有误,请点标题看原文并自行核实。“多源”表示多家媒体都在报道同一事件;“新闻情绪”“开盘参考”均按标题关键词与固定规则统计,仅供参考。"},
+ ko:{title:"글로벌 경제 브리핑",sub:"한국 증시 트레이딩 관점 · 클라우드 30분마다 자동 업데이트 · 페이지를 열면 최신 동기화 · 데이터 시각 ",tabs:{a:"전체",m:"📊 시황·일정",c:"🪙 가상자산",us:"🇺🇸 미국 시장",k:"🇰🇷 한국",g:"🌐 글로벌 매크로",geo:"🌍 지정학",v:"🧠 전략가 관점"},cal:"📅 경제 일정 (KST)",mkt:"📊 시장 스냅샷",sum:"시황 요약",alert:"⚠️ 변동성 경고:",grp:{kr:"🇰🇷 한국 시장",kr2:"🇰🇷 주요 종목",us2:"🇺🇸 미국 주요 종목(한국장 연동)",us:"🇺🇸 미국 증시(간밤)",mac:"🌐 금리·달러·원자재",as:"🌏 아시아",cr:"🪙 가상자산(24시간)"},dday:"D-",today:"오늘",asof:"기준 시각",calend:"일정은 2027-04까지 확인됨. 이후는 업데이트가 필요합니다.",
+  ph:"키워드 검색 예: 삼성전자, 관세, Fed, 외국인, 코스피…",top:"⚡ 오늘의 핵심 (키워드 가중치 + 최신성 기준 자동 정렬)",
+  empty:"조건에 맞는 뉴스가 없습니다.",lv:{cloud:"☁️ 클라우드 데이터",go:"🔄 실시간 보충 중",ok:"✅ 실시간 보충",add:"신규",fail:"ℹ️ 브라우저 실시간 보충 실패 (무료 중계 제한, 무시 가능, 클라우드 데이터 정상)",btn:"지금 새로고침",busy:"새로고침 중…",done:"새로고침 완료",new:"🆕신규"},
+  note:"클라우드 프로그램이 30분마다 수집·번역하며, 페이지를 열면 가장 최신 데이터를 즉시 동기화합니다. 브라우저가 무료 공용 중계로 주요 소스를 추가 보충하려 시도하지만 실패해도 문제없습니다. 시세는 Yahoo Finance 공개 데이터로 지연될 수 있으며 참고용입니다. 외국인·기관·개인 순매매는 포함되지 않으니 증권사 앱을 확인하세요. 뉴스는 공개 출처에서 자동 수집됩니다. '핵심'·'영향' 태그는 키워드 규칙으로 판단한 것이며 투자 조언이나 AI 분석이 아닙니다. 번역은 기계 번역이라 오류가 있을 수 있으니 원문을 확인하세요. '다수 보도'는 여러 매체가 같은 사안을 보도했다는 뜻이며, '뉴스 심리'·'개장 참고'는 제목 키워드와 고정 규칙 기반 통계로 참고용입니다."}
+};
+var lang="zh",tab="a",kw="",LAST=0,LASTNEXT=0,HOT=10,cryptoOn=false,onlyHot=false,klOnly=false,ofOnly=false,imf="",sortMode="t";
+try{cryptoOn=localStorage.getItem("cry")==="1"}catch(e){}
+try{LAST=+localStorage.getItem("lastseen")||0}catch(e){}
+try{var s=localStorage.getItem("lang");if(s==="ko"||s==="zh")lang=s}catch(e){}
+var $=function(i){return document.getElementById(i)};
+var Q=Promise.resolve();
+var TAGM={zh:{"코스피":"KOSPI","환율":"汇率","외국인":"外资","반도체":"半导体","정책":"政策","정부":"政府","한은":"韩国央行","산업":"产业","한미무역":"韩美贸易","비트코인":"比特币","가상자산":"加密资产","북한":"朝鲜","연합뉴스":"韩联社","이데일리":"Edaily","이데일리RSS":"Edaily","서울경제":"首尔经济","머니투데이":"Money Today","연합인포맥스":"韩联社Infomax","연합뉴스KR":"韩联社","뉴욕증시":"纽约股市","미국반도체":"美国半导体","연준":"美联储","실적":"业绩","선물옵션":"期货期权","MSCI":"MSCI指数","한국경제":"韩国经济","매일경제":"每日经济"},
+ ko:{"白宫":"백악관","Fed官员":"Fed 인사","特朗普":"트럼프","美债美元":"미국채·달러","央行":"중앙은행","大宗":"원자재","美股":"미국 증시","芯片/AI":"반도체/AI","中国":"중국","日本":"일본","美中":"미중","台海":"대만해협","中东":"중동","俄乌":"러·우크라","朝鲜":"북한","制裁":"제재","投资大佬":"투자 대가","经济学家":"이코노미스트","巴菲特":"버핏","华尔街策略":"월가 전략","看韩国":"한국 전망","大佬(韩文)":"대가·국내 보도","韩央行·决议":"한은·의결","韩央行·市场动向":"한은·시장동향","韩央行·指标":"한은·지표","韩央行·经济日志":"한은·경제일지","韩央行·国际收支":"한은·국제수지","韩央行·议事录":"한은·의사록","韩央行·新闻稿":"한은·보도자료","金融委·金监院":"금융위·금감원","财经部·产业部":"재경부·산업부","关税厅·统计·交易所":"관세청·통계·거래소","政策简报(官方)":"정책브리핑(공식)","美财政部/OFAC":"미 재무부/OFAC","美商务部/BEA":"미 상무부/BEA","日本央行/财务省":"일본은행/재무성","Nikkei Asia":"닛케이 아시아","策略师(韩文)":"전략가·국내 보도","洪灏":"홍하오","亚洲策略(含韩国)":"아시아 전략(한국 포함)","KOSPI目标价":"코스피 목표치","韩国券商展望":"국내 증권사 전망","熔断·暂停交易":"서킷브레이커·거래정지","指数事件":"지수 이벤트","税制·股东":"세제·주주","公示·财报":"공시·실적","资金·程序化":"수급·프로그램","外资看韩国":"외국계 시각","比特币":"비트코인","以太坊":"이더리움","监管":"규제","机构":"기관","BLS":"BLS","MW速递":"MW 속보","WSJ市场":"WSJ 시장","CNBC头条":"CNBC 헤드라인","Yahoo财经":"Yahoo 금융","美股期货":"미국 선물","美国数据":"미국 경제지표","美股财报":"미국 실적","科技巨头":"빅테크","美韩关联":"한미 관련"}};
+try{var ks=[];for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&k.indexOf("t|")===0)ks.push(k)}
+  if(ks.length>1500)ks.forEach(function(k){localStorage.removeItem(k)})}catch(e){}
+function okLang(t,l){return l==="zh"?(/[一-鿿]/.test(t)&&!/[가-힣]/.test(t)):/[가-힣]/.test(t)}
+var TQ=[],TP={},TA=0,TF={};
+var TPV=[
+ function(t,tl){return fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl="+tl+"&dt=t&q="+encodeURIComponent(t),{signal:tmo(8000)}).then(function(r){return r.json()}).then(function(j){return j[0].map(function(x){return x[0]}).join("")})},
+ function(t,tl){return fetch("https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=auto&tl="+tl+"&q="+encodeURIComponent(t),{signal:tmo(8000)}).then(function(r){return r.json()}).then(function(j){var r=Array.isArray(j)?j[0]:j;return Array.isArray(r)?r[0]:r})},
+ function(t,tl){var s=/[가-힣]/.test(t)?"ko":"en";return fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(t.slice(0,480))+"&langpair="+s+"|"+tl,{signal:tmo(8000)}).then(function(r){return r.json()}).then(function(j){return j.responseData.translatedText})}
+];
+function tPump(){while(TA<3&&TQ.length){TA++;tRun(TQ.shift(),0)}}
+function tRun(it,pi){
+  if(pi>=TPV.length){TF[it.key]=1;delete TP[it.key];TA--;tPump();return}
+  TPV[pi](it.text,it.tl).then(function(t){
+    t=(t||"").trim();
+    if(!okLang(t,it.tl==="zh-CN"?"zh":"ko")||/MYMEMORY/i.test(t))throw 0;
+    try{localStorage.setItem(it.key,t)}catch(e){}
+    (TP[it.key]||[]).forEach(function(e){if(e.isConnected&&e.dataset.l===it.tl)e.textContent=t});
+    delete TP[it.key];TA--;tPump();
+  }).catch(function(){tRun(it,pi+1)});
+}
+function fix(el,text){
+  if(!text||okLang(text,lang))return;
+  var tl=lang==="zh"?"zh-CN":"ko",key="t|"+tl+"|"+text;
+  try{var c=localStorage.getItem(key);if(c){el.textContent=c;return}}catch(e){}
+  if(TF[key])return;
+  el.dataset.l=tl;
+  if(TP[key]){TP[key].push(el);return}
+  TP[key]=[el];TQ.push({key:key,text:text,tl:tl});tPump();
+}
+function seg(el,items,cur,fn){el.innerHTML="";items.forEach(function(it){var b=document.createElement("button");b.textContent=it[1];if(it[0]===cur)b.className="on";b.onclick=function(){fn(it[0])};el.appendChild(b)})}
+function rel(ms){if(!ms)return"";var m=Math.round((Date.now()-ms)/6e4),z=lang==="zh";if(m<0||m>=720)return"";return " · "+(m<1?(z?"刚刚":"방금"):m<60?m+(z?"分钟前":"분 전"):Math.floor(m/60)+(z?"小时前":"시간 전"))}
+function inTab(n){if(tab!=="a")return n.k===tab;return !(n.k==="c"&&!cryptoOn&&!kw&&imf!=="crypto")}
+function card(n){
+  var c=document.createElement("div");c.className="card"+(n.sc>=HOT?" hot":"");
+  var h=document.createElement("h3"),a=document.createElement("a");
+  a.textContent=n[lang].h;fix(a,n[lang].h);a.href=/^https?:/.test(n.url||"")?n.url:"#";a.target="_blank";a.rel="noopener";h.appendChild(a);c.appendChild(h);
+  if(n[lang].b){var p=document.createElement("p");p.textContent=n[lang].b;fix(p,n[lang].b);c.appendChild(p)}
+  var m=document.createElement("div");m.className="meta";
+  var tags=[];
+  if(n.live||(LAST&&n.ts>LAST))tags.push([UI[lang].lv.new,"new"]);
+  if(n.sc>=HOT)tags.push([lang==="zh"?"⚡重点":"⚡핵심","hot"]);
+  if(n.of)tags.push([lang==="zh"?"🏛官方":"🏛공식","of"]);
+  if(n.kl&&n.k!=="k")tags.push([lang==="zh"?"🇰🇷韩股关联":"🇰🇷한국장 연관","kl"]);
+  tags.push([n.k==="k"?"KR":n.k==="us"?"US":n.k==="geo"?"GEO":n.k==="v"?"VIEW":n.k==="c"?"CRYPTO":"GLOBAL",n.k==="k"?"kr":""]);
+  tags.push([(TAGM[lang]||{})[n.tag]||n.tag,""]);
+  if(n.n>1)tags.push([(lang==="zh"?"📰多源×":"📰다수보도×")+n.n,"multi",{tip:(n.srcs||[]).join(", ")}]);
+  (n.imp||[]).forEach(function(i){tags.push([(lang==="zh"?"影响·":"영향·")+(IMP[i]||[i,i])[lang==="zh"?0:1],"imp",{imp:i}])});
+  tags.push([n.t+rel(n.ts),""]);tags.push([n.src,""]);
+  tags.forEach(function(t){var s=document.createElement("span");s.className="tag "+t[1];s.textContent=t[0];
+    if(t[2]&&t[2].imp){s.style.cursor="pointer";s.onclick=function(){imf=t[2].imp;render();window.scrollTo(0,0)}}
+    if(t[2]&&t[2].tip)s.title=t[2].tip;
+    m.appendChild(s)});
+  c.appendChild(m);return c;
+}
+function match(n){
+  if(!inTab(n))return false;
+  if(onlyHot&&n.sc<HOT)return false;
+  if(klOnly&&!n.kl&&n.k!=="k")return false;
+  if(ofOnly&&!n.of)return false;
+  if(imf&&(n.imp||[]).indexOf(imf)<0)return false;
+  if(!kw)return true;
+  var s=(n.zh.h+" "+n.ko.h+" "+n.zh.b+" "+n.ko.b+" "+n.tag+" "+n.src).toLowerCase();
+  return s.indexOf(kw)>=0;
+}
+function today(){return new Date().toLocaleDateString("sv-SE",{timeZone:"Asia/Seoul"})}
+function dd(k){var a=Date.UTC.apply(null,k.slice(0,10).split("-").map(function(x,i){return i===1?x-1:+x}));
+  var b=Date.UTC.apply(null,today().split("-").map(function(x,i){return i===1?x-1:+x}));return Math.round((a-b)/864e5)}
+function fmt(v,d){return v.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d})}
+function sgn(v){return v>0?"+":""}
+function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
+function calBox(n){
+  var u=UI[lang],box=document.createElement("div");
+  box.appendChild(el("h2","",u.cal));
+  var c=el("div","card");
+  var up=(D.cal||[]).filter(function(e){return dd(e.kst)>=0}).slice(0,n);
+  up.forEach(function(e){
+    var r=el("div","ev"),d=dd(e.kst);
+    r.appendChild(el("span","dd",d===0?u.today:u.dday+d));
+    var w=el("div"),a=el("a","",e[lang]);a.href=e.url;a.target="_blank";a.rel="noopener";w.appendChild(a);
+    w.appendChild(el("div","w",e.kst.slice(5,10).replace("-","/")+(e.t?" · "+e.t.slice(6):"")+" · "+({bok:"BOK",krx:"KRX"}[e.k]||"US")));
+    r.appendChild(w);c.appendChild(r)});
+  box.appendChild(c);
+  if(n>8)box.appendChild(el("div","note",u.calend));
+  return box;
+}
+function tzp(tz){
+  var o={};new Intl.DateTimeFormat("en-US",{timeZone:tz,weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false,year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(new Date()).forEach(function(p){o[p.type]=p.value});
+  return {wd:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute),date:o.year+"-"+o.month+"-"+o.day};
+}
+function toOpen(p,open,skip){for(var d=0;d<8;d++){var w=(p.wd+d)%7;if(w>=1&&w<=5&&(d>0||(!skip&&p.m<open)))return d*1440+open-p.m}return 0}
+function fmtMin(m,z){var d=Math.floor(m/1440),h=Math.floor(m%1440/60),mi=m%60;return (d?d+(z?"天":"일 "):"")+(h?h+(z?"小时":"시간 "):"")+mi+(z?"分":"분")}
+function sessText(){
+  var z=lang==="zh",kr=tzp("Asia/Seoul"),us=tzp("America/New_York"),cal=D.cal||[];
+  var krH=cal.some(function(e){return e.k==="krx"&&/休市/.test(e.zh)&&e.kst.slice(0,10)===kr.date});
+  var usH=cal.some(function(e){return e.k==="hol"&&/休市/.test(e.zh)&&e.kst.slice(0,10)===us.date});
+  var krW=kr.wd>=1&&kr.wd<=5&&!krH,usW=us.wd>=1&&us.wd<=5&&!usH,a,b;
+  if(krW&&kr.m>=540&&kr.m<930)a=(z?"盘中 · 距收盘 ":"장중 · 마감까지 ")+fmtMin(930-kr.m,z);
+  else a=(z?"休市 · 距开盘 ":"휴장 · 개장까지 ")+fmtMin(toOpen(kr,540,!krW),z);
+  if(usW&&us.m>=570&&us.m<960)b=(z?"盘中 · 距收盘 ":"장중 · 마감까지 ")+fmtMin(960-us.m,z);
+  else if(usW&&us.m>=240&&us.m<570)b=(z?"盘前 · 距开盘 ":"프리마켓 · 개장까지 ")+fmtMin(570-us.m,z);
+  else if(usW&&us.m>=960&&us.m<1200)b=(z?"盘后 · 距下次开盘 ":"애프터마켓 · 다음 개장까지 ")+fmtMin(toOpen(us,570,false),z);
+  else b=(z?"休市 · 距开盘 ":"휴장 · 개장까지 ")+fmtMin(toOpen(us,570,!usW),z);
+  return "🇰🇷 "+(z?"韩股 ":"한국장 ")+a+"  ｜  🇺🇸 "+(z?"美股 ":"미국장 ")+b+(z?"(未计入临时休市)":"(임시 휴장 미반영)");
+}
+var BEAR=/plunge|slump|crash|sell-?off|tumble|plummet|slide|fears|worries|급락|폭락|하락|약세|우려|쇼크|패닉|暴跌|下跌|大跌|恐慌|承压/i,
+    BULL=/surge|rally|soar|jump|rebound|record high|급등|상승|강세|반등|사상 최고|호재|上涨|大涨|反弹|创新高|走强/i;
+function sentOf(col){
+  var cut=Date.now()-8*36e5,bu=0,be=0,ne=0;
+  D.items.forEach(function(n){if(n.k!==col||(n.ts||0)<cut)return;var t=(n.o||"")+" "+n.zh.h+" "+n.ko.h,a=BULL.test(t),b=BEAR.test(t);if(b&&!a)be++;else if(a&&!b)bu++;else ne++});
+  return {bu:bu,be:be,ne:ne,n:bu+be+ne};
+}
+function mrow(s){return (D.market||[]).filter(function(r){return r.s===s})[0]}
+function pct(r){return r?sgn(r.pc)+r.pc.toFixed(2)+"%":""}
+function mktBox(full){
+  var u=UI[lang],box=document.createElement("div");
+  var sb=el("div","sumline");sb.id="sess";sb.textContent=sessText();box.appendChild(sb);
+  var M=D.market||[];
+  if(!M.length)return box;
+  var k=mrow("^KS11"),q=mrow("^KQ11"),f=mrow("KRW=X"),s=mrow("^GSPC"),x=mrow("^SOX"),e=mrow("EWY");
+  var parts=[];
+  if(k)parts.push("KOSPI "+fmt(k.p,2)+" ("+pct(k)+")");
+  if(q)parts.push("KOSDAQ "+pct(q));
+  if(f)parts.push((lang==="zh"?"美元/韩元 ":"원/달러 ")+fmt(f.p,2)+" ("+pct(f)+")");
+  var us=[];
+  if(s)us.push((lang==="zh"?"标普500 ":"S&P500 ")+pct(s));
+  if(x)us.push((lang==="zh"?"费半 ":"필반 ")+pct(x));
+  var nq=mrow("NQ=F");if(nq)us.push((lang==="zh"?"纳指期货 ":"나스닥선물 ")+pct(nq));
+  if(e)us.push("EWY "+pct(e));
+  var b=mrow("BTC-USD"),km=D.kimchi;
+  if(b)us.push((lang==="zh"?"比特币 ":"비트코인 ")+"$"+fmt(b.p,0)+" ("+pct(b)+")");
+  var line=parts.join(" · ")+(us.length?(lang==="zh"?" ｜ 隔夜美股:":" ｜ 간밤 미국:")+us.join(" · "):"");
+  var AL=[["^KS11",3],["^KQ11",4],["KRW=X",1],["^GSPC",2],["^IXIC",2.5],["^SOX",4],["BTC-USD",7],["^VIX",15],["EWY",4],["005930.KS",4],["000660.KS",5],["NVDA",6],["MU",7]],al=[];
+  AL.forEach(function(a){var r=mrow(a[0]);if(r&&Math.abs(r.pc)>=a[1])al.push(r[lang]+" "+pct(r))});
+  box.appendChild(el("h2","",u.sum));
+  if(al.length)box.appendChild(el("div","alert",u.alert+" "+al.join(" · ")));
+  box.appendChild(el("div","sumline",line));
+  var z=lang==="zh",vx=mrow("^VIX"),H=[];
+  if(e&&k){var df=e.pc-k.pc;H.push((z?"EWY−KOSPI 涨跌差 ":"EWY−KOSPI 등락 차이 ")+sgn(df)+df.toFixed(2)+"% → "+(df<=-1?(z?"隔夜美盘对韩股偏空,开盘有低开压力":"간밤 미국장 한국물 약세, 갭하락 부담"):df>=1?(z?"隔夜美盘对韩股偏多,开盘有高开可能":"간밤 미국장 한국물 강세, 갭상승 가능"):(z?"中性":"중립")))}
+  if(x)H.push((z?"费城半导体 ":"필라델피아 반도체 ")+pct(x)+" → "+(Math.abs(x.pc)<2?(z?"对三星/海力士影响有限":"삼성전자·SK하이닉스 영향 제한적"):x.pc<0?(z?"半导体权重股承压":"반도체 대형주 부담"):(z?"半导体权重股有支撑":"반도체 대형주 지지")));
+  if(f)H.push((z?"美元/韩元 ":"원/달러 ")+pct(f)+" → "+(f.pc>=0.5?(z?"韩元走弱,外资汇兑压力上升":"원화 약세, 외국인 환차손 부담"):f.pc<=-0.5?(z?"韩元走强,利于外资流入":"원화 강세, 외국인 유입 우호"):(z?"汇率平稳":"환율 안정")));
+  if(vx)H.push("VIX "+fmt(vx.p,2)+" ("+pct(vx)+") → "+(vx.p>=30?(z?"恐慌区,波动剧烈":"공포 구간, 변동성 확대"):vx.p>=20?(z?"警惕区":"경계 구간"):(z?"情绪平稳":"심리 안정")));
+  if(H.length){box.appendChild(el("h2","",z?"🎯 韩股开盘参考(规则估算,非投资建议)":"🎯 한국장 개장 참고 (규칙 기반 추정, 투자 조언 아님)"));H.forEach(function(l){box.appendChild(el("div","sumline",l))})}
+  var SL=[];
+  [["us","🇺🇸 "+(z?"美国":"미국")],["k","🇰🇷 "+(z?"韩国":"한국")]].forEach(function(c){var r=sentOf(c[0]);if(r.n<5)return;
+    var tone=r.be>r.bu*1.5?(z?"情绪偏空":"심리 약세"):r.bu>r.be*1.5?(z?"情绪偏多":"심리 강세"):(z?"多空均衡":"균형");
+    SL.push(c[1]+" "+tone+" · "+(z?"偏空 ":"약세 ")+r.be+" / "+(z?"偏多 ":"강세 ")+r.bu+" / "+(z?"中性 ":"중립 ")+r.ne+(z?"(近8小时":"(최근 8시간")+" "+r.n+(z?" 条)":"건)"))});
+  if(SL.length){box.appendChild(el("h2","",z?"📰 新闻情绪(标题关键词统计,仅供参考)":"📰 뉴스 심리 (제목 키워드 통계, 참고용)"));SL.forEach(function(l){box.appendChild(el("div","sumline",l))})}
+  var groups=full?["kr","kr2","us","us2","cr","mac","as"]:["kr","cr"];
+  groups.forEach(function(g){
+    var rows=M.filter(function(r){return r.g===g});if(!rows.length)return;
+    box.appendChild(el("h2","",u.grp[g]));
+    var gd=el("div","grid");
+    rows.forEach(function(r){
+      var c=el("div","q1");c.appendChild(el("div","n",r[lang]));
+      c.appendChild(el("div","v",fmt(r.p,r.d)));
+      var ch=r.y?sgn(r.c)+(r.c*100).toFixed(1)+"bp":sgn(r.pc)+r.pc.toFixed(2)+"%";
+      c.appendChild(el("div","c "+(r.c>0?"up":r.c<0?"dn":""),ch+"  "+r.t));
+      gd.appendChild(c)});
+    box.appendChild(gd);
+    if(g==="cr"&&km&&km.premium!==undefined){
+      box.appendChild(el("div","sumline",(lang==="zh"?"🌶 泡菜溢价(Upbit BTC对比国际价): ":"🌶 김치 프리미엄(업비트 BTC 대비 해외가): ")+sgn(km.premium)+km.premium.toFixed(2)+"%  ·  Upbit ₩"+fmt(km.btc_krw,0)))}
+  });
+  return box;
+}
+
+var LIVE={busy:false,last:0,added:0,ok:0,total:0,state:"idle",sync:0,off:false,mq:0,mqT:0,mk:0};
+try{LIVE.off=Date.now()-(+localStorage.getItem("livefail")||0)<6*36e5}catch(e){}
+var PX=["https://api.allorigins.win/raw?url=","https://api.codetabs.com/v1/proxy/?quest=","https://corsproxy.io/?url="];
+function tmo(ms){var c=new AbortController();setTimeout(function(){c.abort()},ms);return c.signal}
+function getText(url,direct,via){
+  var chain=direct?[url]:[];
+  if(via)PX.forEach(function(p){chain.push(p+encodeURIComponent(url))});
+  var i=0;
+  function next(){
+    if(i>=chain.length)return Promise.reject(new Error("fail"));
+    return fetch(chain[i++],{signal:tmo(8000)}).then(function(r){if(!r.ok)throw 0;return r.text()}).catch(function(){return next()});
+  }
+  return next();
+}
+function plain(h){try{return new DOMParser().parseFromString(h||"","text/html").body.textContent.replace(/\s+/g," ").trim()}catch(e){return ""}}
+function parseFeed(x){
+  var doc=new DOMParser().parseFromString(x,"text/xml"),out=[];
+  var nodes=doc.querySelectorAll("item,entry");
+  for(var i=0;i<nodes.length;i++){
+    var it=nodes[i];
+    var g=function(n){var e=it.getElementsByTagName(n)[0];return e?e.textContent:""};
+    var le=it.getElementsByTagName("link")[0];
+    var link=le?(le.getAttribute("href")||le.textContent||""):"";
+    var ts=Date.parse(g("pubDate")||g("published")||g("updated"));
+    out.push({title:plain(g("title")),link:link.trim(),desc:plain(g("description")||g("summary")),ts:isNaN(ts)?Date.now():ts,src:plain(g("source"))});
+  }
+  return out;
+}
+function rssJson(url){
+  return fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent(url),{signal:tmo(8000)}).then(function(r){return r.json()}).then(function(j){
+    if(j.status!=="ok")throw 0;
+    return j.items.map(function(i){var ts=Date.parse(String(i.pubDate||"").replace(" ","T")+"Z");
+      return {title:plain(i.title),link:i.link||"",desc:plain(i.description),ts:isNaN(ts)?Date.now():ts,src:""}});
+  });
+}
+function getFeed(f){
+  return getText(f.u,false,true).then(parseFeed).then(function(l){if(!l.length)throw 0;return l}).catch(function(){return rssJson(f.u)});
+}
+function nkey(s){return (s||"").toLowerCase().replace(/[^a-z0-9\uac00-\ud7a3\u4e00-\u9fff]/g,"").slice(0,45)}
+var KWR=null,IMR=null;
+function score(text,col,ageH){
+  if(!KWR){KWR=(D.kw||[]).map(function(a){return [a[0],new RegExp(a[1],"i")]});IMR=(D.impact||[]).map(function(a){return [a[0],new RegExp(a[1],"i")]})}
+  var sc=0;KWR.forEach(function(a){if(a[1].test(text))sc+=a[0]});
+  if(col==="k")sc+=1;sc+=ageH<3?2:(ageH<8?1:0);
+  var imp=[];IMR.forEach(function(a){if(imp.length<3&&a[1].test(text))imp.push(a[0])});
+  return {sc:sc,imp:imp};
+}
+function fmtT(ms){return new Date(ms).toLocaleString("sv-SE",{timeZone:"Asia/Seoul"}).slice(5,16).replace("-","/")}
+function isBusy(){return LIVE.busy||LIVE.sy}
+function manual(){
+  if(isBusy())return;
+  LIVE.sy=true;status();
+  syncCloud().then(function(){LIVE.sy=false;liveRefresh(true);status()});
+}
+function ago(ms){var m=Math.max(0,Math.round((Date.now()-ms)/6e4)),z=lang==="zh";return m<60?m+(z?"分钟前":"분 전"):Math.floor(m/60)+(z?"小时":"시간 ")+(m%60)+(z?"分钟前":"분 전")}
+function status(){
+  var u=UI[lang].lv,z=lang==="zh",e=$("st"),H=D.health||{};e.innerHTML="";
+  var c1=u.cloud+" "+String(D.updated||"").slice(5,16)+(D.built?" ("+ago(D.built)+")":"");
+  if(D.built&&Date.now()-D.built>75*6e4)c1+=z?" ⚠️ 云端更新可能延迟":" ⚠️ 클라우드 업데이트 지연 가능";
+  if(H.total)c1+=" · "+(z?"抓取源 ":"수집 소스 ")+H.ok+"/"+H.total+(H.new!==undefined?" · "+(z?"本次新增 ":"이번 신규 ")+H.new+(z?" 条":"건"):"");if(H.fail&&H.fail.length)c1+=" ("+(z?"失败:":"실패:")+H.fail.slice(0,4).join("、")+(H.fail.length>4?"…":"")+")";
+  e.appendChild(el("span","",c1));
+  var c2="";
+  if(LIVE.state==="go")c2=u.go+" ("+LIVE.ok+"/"+LIVE.total+")";
+  else if(LIVE.state==="ok")c2=u.ok+" "+u.add+LIVE.added+" ("+LIVE.ok+"/"+LIVE.total+")";
+  else if(LIVE.state==="fail")c2=u.fail+" · "+LIVE.ok+"/"+LIVE.total;
+  if(!c2&&LIVE.off)c2=z?"ℹ️ 浏览器实时补充已暂停(免费中转连续失败,不影响云端数据;点“立即刷新”可重试)":"ℹ️ 브라우저 실시간 보충 일시중지 (무료 중계 연속 실패, 클라우드 데이터 정상; 새로고침으로 재시도)";
+  if(LIVE.mqT)c2+=(c2?" · ":"")+(z?"行情直连 ":"시세 직결 ")+LIVE.mq+"/"+LIVE.mqT;
+  if(c2)e.appendChild(el("span","",c2));
+  var c3=[];
+  if(LIVE.chk)c3.push((z?"最近检查 ":"최근 확인 ")+LIVE.chk);
+  if(LIVE.cloud)c3.push(LIVE.cloud==="new"?(z?"云端:已载入新版本":"클라우드: 새 버전 로드"):LIVE.cloud==="same"?(z?"云端:已是最新":"클라우드: 최신 상태"):(z?"云端:同步失败":"클라우드: 동기화 실패"));
+  if(LAST){var nn=D.items.filter(function(n){return n.ts>LAST}).length;c3.push((z?"较上次打开新增 ":"지난 방문 이후 신규 ")+nn+(z?" 条":"건"))}
+  if(c3.length)e.appendChild(el("span","",c3.join(" · ")));
+  var b=el("button","rf",(isBusy()?"⏳ "+u.busy:"🔄 "+u.btn));b.disabled=isBusy();b.onclick=manual;e.appendChild(b);
+}
+function chipsRender(){
+  var z=lang==="zh",box=$("chips");box.innerHTML="";
+  var base=D.items.filter(inTab),cnt={},hot=0;
+  base.forEach(function(n){(n.imp||[]).forEach(function(i){cnt[i]=(cnt[i]||0)+1});if(n.sc>=HOT)hot++});
+  function chip(label,on,fn){var b=el("button","chip"+(on?" on":""),label);b.onclick=fn;box.appendChild(b)}
+  chip("⚡"+(z?"仅重点 ":"핵심만 ")+hot,onlyHot,function(){onlyHot=!onlyHot;render()});
+  if(tab!=="k"){var klc=0;base.forEach(function(n){if(n.kl)klc++});chip("🇰🇷"+(z?"韩股关联 ":"한국장 연관 ")+klc,klOnly,function(){klOnly=!klOnly;render()})}
+  var ofc=0;base.forEach(function(n){if(n.of)ofc++});chip("🏛"+(z?"官方来源 ":"공식 출처 ")+ofc,ofOnly,function(){ofOnly=!ofOnly;render()});
+  if(tab==="a")chip("🪙"+(z?"含加密货币":"가상자산 포함"),cryptoOn,function(){cryptoOn=!cryptoOn;try{localStorage.setItem("cry",cryptoOn?"1":"0")}catch(e){}render()});
+  Object.keys(IMP).forEach(function(k){if(!cnt[k]&&imf!==k)return;chip(IMP[k][z?0:1]+" "+(cnt[k]||0),imf===k,function(){imf=imf===k?"":k;render()})});
+}
+function rerender(){var y=window.scrollY;render();window.scrollTo(0,y)}
+function syncCloud(){
+  return fetch("data.json?t="+Date.now(),{cache:"no-store",signal:tmo(10000)}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){
+    LIVE.sync=Date.now();LIVE.chk=fmtT(Date.now()).slice(6);
+    if(!j||!j.items||(j.built||0)<=(D.built||0)){LIVE.cloud="same";status();return}
+    LIVE.cloud="new";
+    ["updated","items","market","cal","kimchi","built","health","kw","impact","feeds","targets","krlink","alertre","officialre"].forEach(function(k){if(j[k]!==undefined)D[k]=j[k]});
+    KWR=null;IMR=null;rerender();
+  }).catch(function(){LIVE.cloud="fail";status()});
+}
+function liveRefresh(force){
+  if(LIVE.busy)return;
+  if(!force&&LIVE.off){status();liveMarket(false);return}
+  if(!force&&Date.now()-LIVE.last<5*60*1000)return;
+  LIVE.busy=true;LIVE.state="go";LIVE.ok=0;LIVE.added=0;
+  var feeds=(D.feeds||[]).slice();LIVE.total=feeds.length;status();
+  var seen={};D.items.forEach(function(n){seen[nkey(n.o||n.zh.h)]=1;seen[nkey(n.ko.h)]=1;seen[nkey(n.zh.h)]=1});
+  var now=Date.now();
+  function add(f,list){
+    var c=0;
+    list.forEach(function(e){if(e.ts>now+6e5){e.ts-=324e5;if(e.ts>now+6e5)e.ts=now}});
+    list.sort(function(a,b){return b.ts-a.ts});
+    list.forEach(function(e){
+      if(c>=f.cap||!e.title||now-e.ts>f.h*36e5)return;
+      var src=f.src||e.src||f.tag,title=e.title;
+      if(!f.src&&e.src&&title.slice(-(e.src.length+3))===" - "+e.src)title=title.slice(0,-(e.src.length+3));
+      var k=nkey(title);if(!k||seen[k])return;seen[k]=1;c++;
+      var gn=f.u.indexOf("news.google.com")>=0,desc=gn?"":e.desc.slice(0,240);
+      var s=score(title+" "+desc,f.k,(now-e.ts)/36e5);
+      var link=/^https?:/.test(e.link)?e.link:"#";
+      var KLR=D.krlink?new RegExp(D.krlink,"i"):null,ALR=D.alertre?new RegExp(D.alertre,"i"):null,OFR=D.officialre?new RegExp(D.officialre,"i"):null;
+      D.items.push({live:1,of:(OFR&&OFR.test(src))?1:0,kl:(KLR&&f.k!=="k"&&KLR.test(title))?1:0,al:(ALR&&ALR.test(title))?1:0,o:title,ts:e.ts,sc:s.sc,imp:s.imp,k:f.k,tag:f.tag,src:src,url:link,t:fmtT(e.ts),
+        zh:{h:title,b:desc},ko:{h:title,b:desc}});
+      LIVE.added++;
+    });
+  }
+  function worker(){
+    var f=feeds.shift();if(!f)return Promise.resolve();
+    return getFeed(f).then(function(l){add(f,l);LIVE.ok++}).catch(function(){}).then(function(){status();return worker()});
+  }
+  Promise.all([worker(),worker(),worker()]).then(function(){
+    var lim={us:70,g:40,geo:30,v:60,k:100,c:40},cnt={};
+    D.items.sort(function(a,b){return (b.ts||0)-(a.ts||0)});
+    D.items=D.items.filter(function(n){cnt[n.k]=(cnt[n.k]||0)+1;return cnt[n.k]<=(lim[n.k]||40)});
+    LIVE.last=Date.now();LIVE.state=LIVE.ok?"ok":"fail";LIVE.busy=false;
+    try{if(LIVE.ok){localStorage.removeItem("livefail");LIVE.off=false}else{localStorage.setItem("livefail",Date.now());LIVE.off=true}}catch(e){}LIVE.chk=fmtT(Date.now()).slice(6);
+    rerender();liveMarket(true);
+  });
+}
+function liveMarket(force){
+  if(!force&&Date.now()-LIVE.mk<120000)return;
+  LIVE.mk=Date.now();
+  var q=(D.market||[]).slice();LIVE.mq=0;LIVE.mqT=q.length;
+  function w(){
+    var r=q.shift();if(!r)return Promise.resolve();
+    var url="https://query1.finance.yahoo.com/v8/finance/chart/"+encodeURIComponent(r.s)+"?interval=1d&range=5d";
+    return getText(url,true,false).then(function(tx){
+      var j=JSON.parse(tx).chart.result[0],m=j.meta;
+      var cl=j.indicators.quote[0].close.filter(function(c){return c!=null});
+      var p=m.regularMarketPrice||cl[cl.length-1],pv=cl.length>=2?cl[cl.length-2]:m.chartPreviousClose;
+      LIVE.mq++;r.p=p;r.c=p-pv;r.pc=pv?(p-pv)/pv*100:0;r.t=fmtT(m.regularMarketTime*1000);
+    }).catch(function(){}).then(w);
+  }
+  Promise.all([w(),w(),w(),w()]).then(function(){
+    getText("https://api.upbit.com/v1/ticker?markets=KRW-BTC",true,false).then(function(tx){
+      var up=JSON.parse(tx)[0],b=mrow("BTC-USD"),f=mrow("KRW=X");
+      if(up&&b&&f)D.kimchi={btc_krw:up.trade_price,pc:up.signed_change_rate*100,premium:(up.trade_price/(b.p*f.p)-1)*100};
+    }).catch(function(){}).then(rerender);
+  });
+}
+function nurl(n){return /^https?:/.test(n.url||"")?n.url:"#"}
+function alertBox(){
+  var now=Date.now(),al=D.items.filter(function(n){return n.al&&n.ts&&now-n.ts<24*36e5}).slice(0,3);
+  if(!al.length)return null;
+  var box=el("div","alert2");
+  box.appendChild(el("div","",lang==="zh"?"🚨 市场警报(熔断 / 暂停交易 / 违约 / 挤兑等关键词)":"🚨 시장 경보 (서킷브레이커·거래정지·부도·뱅크런 등)"));
+  al.forEach(function(n){var a=el("a","",n[lang].h);fix(a,n[lang].h);a.href=nurl(n);a.target="_blank";a.rel="noopener";box.appendChild(a)});
+  return box;
+}
+function tgtBox(){
+  var box=document.createElement("div");
+  box.appendChild(el("h2","",lang==="zh"?"🎯 策略师目标价速览(从标题自动提取,仅供参考)":"🎯 전략가 목표치 요약 (제목에서 자동 추출, 참고용)"));
+  var c=el("div","card");
+  (D.targets||[]).slice(0,10).forEach(function(t){
+    var r=el("div","ev"),d=el("span","dd",t.idx+" "+fmt(t.num,0));d.style.minWidth="132px";r.appendChild(d);
+    var w=el("div"),a=el("a","",t[lang].h);fix(a,t[lang].h);a.href=/^https?:/.test(t.url||"")?t.url:"#";a.target="_blank";a.rel="noopener";w.appendChild(a);
+    w.appendChild(el("div","w",t.who+" · "+t.t+" · "+t.src));r.appendChild(w);c.appendChild(r)});
+  box.appendChild(c);return box;
+}
+function render(){
+  var u=UI[lang];document.documentElement.lang=lang;
+  $("title").textContent=u.title;$("sub").textContent=u.sub+D.updated;$("note").textContent=u.note;$("q").placeholder=u.ph;
+  var counts={a:0};D.items.forEach(function(n){counts[n.k]=(counts[n.k]||0)+1;if(n.k!=="c"||cryptoOn)counts.a++});
+  seg($("tabs"),["a","m","us","k","c","g","geo","v"].map(function(k){return [k,u.tabs[k]+(k==="m"?"":" "+(counts[k]||0))]}),tab,function(v){tab=v;render()});
+  seg($("langs"),[["zh","中文"],["ko","한국어"]],lang,function(v){lang=v;try{localStorage.setItem("lang",v)}catch(e){}render()});
+  seg($("sorts"),[["t",lang==="zh"?"🕒 最新":"🕒 최신"],["s",lang==="zh"?"⚡ 重要":"⚡ 중요"]],sortMode,function(v){sortMode=v;render()});
+  var top=$("top");top.innerHTML="";var box=$("list");box.innerHTML="";
+  $("q").style.display=tab==="m"?"none":"";$("chips").style.display=tab==="m"?"none":"flex";$("sorts").style.display=tab==="m"?"none":"";
+  chipsRender();status();
+  if(tab==="m"){top.appendChild(mktBox(true));top.appendChild(calBox(30));return}
+  if(tab==="v"&&!kw&&!imf&&!onlyHot&&!klOnly&&(D.targets||[]).length)top.appendChild(tgtBox());
+  var list=D.items.filter(match),tp=[];
+  if(tab==="a"&&!kw&&!imf&&!onlyHot&&!klOnly&&!ofOnly){
+    var ab=alertBox();if(ab)top.appendChild(ab);
+    top.appendChild(mktBox(false));top.appendChild(calBox(4));
+    tp=D.items.filter(inTab).sort(function(a,b){return b.sc-a.sc}).slice(0,8);
+    if(tp.length){top.appendChild(el("h2","",u.top));tp.forEach(function(n){top.appendChild(card(n))});
+      top.appendChild(el("h2","",(sortMode==="s"?{zh:"⚡ 其余(按重要度)",ko:"⚡ 나머지(중요도순)"}:{zh:"🕒 最新",ko:"🕒 최신"})[lang]))}
+  }
+  if(tp.length)list=list.filter(function(n){return tp.indexOf(n)<0});
+  if(sortMode==="s")list.sort(function(a,b){return (b.sc-a.sc)||((b.ts||0)-(a.ts||0))});
+  if(!list.length&&!tp.length){box.appendChild(el("div","empty",u.empty));return}
+  list.forEach(function(n){box.appendChild(card(n))});
+}
+$("q").oninput=function(){kw=this.value.trim().toLowerCase();render()};
+render();
+syncCloud().then(function(){liveRefresh(false)});
+setInterval(function(){if(document.visibilityState==="visible")syncCloud().then(function(){liveRefresh(false)})},5*60*1000);
+setInterval(function(){var s=$("sess");if(s)s.textContent=sessText()},30000);
+function saveSeen(){try{var m=0;D.items.forEach(function(n){if(n.ts>m)m=n.ts});if(m){localStorage.setItem("lastseen",m);LASTNEXT=m}}catch(e){}}
+window.addEventListener("pagehide",saveSeen);
+document.addEventListener("visibilitychange",function(){
+  if(document.visibilityState==="hidden"){saveSeen();return}
+  if(LASTNEXT)LAST=LASTNEXT;
+  syncCloud().then(function(){liveRefresh(false)});
+});
+</script>
+</body>
+</html>
